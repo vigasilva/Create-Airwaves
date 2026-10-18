@@ -18,6 +18,9 @@ repositories {
     maven { url = 'https://maven.createmod.net' }
     maven { url = 'https://maven.ithundxr.dev/snapshots' }
     maven { url = 'https://maven.blamejared.com' }
+    // Public Modrinth Maven repository. These replace the previously
+    // user-supplied JARs in libs/ and make a fresh clone compile directly.
+    maven { url = 'https://api.modrinth.com/maven' }
 }
 
 neoForge {
@@ -38,13 +41,6 @@ neoForge {
     }
 }
 
-configurations {
-    // Development-only mods placed in libs/. They are available to runClient
-    // but never copied into the reconstructed Airwaves artifact.
-    localRuntime
-    runtimeClasspath.extendsFrom(localRuntime)
-}
-
 dependencies {
     // Create publishes its development API as separate Maven artifacts; the
     // copied runtime JAR alone is not sufficient for compilation.
@@ -56,10 +52,17 @@ dependencies {
     runtimeOnly("dev.engine-room.flywheel:flywheel-neoforge-${minecraft_version}:${flywheel_version}")
     implementation("com.tterrag.registrate:Registrate:${registrate_version}")
 
-    // These JARs are local development dependencies. They are deliberately
-    // ignored by Git and are not bundled into the produced Airwaves JAR.
-    implementation(files(fileTree(dir: 'libs', include: ['*.jar'])))
-    localRuntime(files(fileTree(dir: 'libs', include: ['*.jar'])))
+    // Compatibility APIs. These are fetched automatically for a clean clone;
+    // none are shaded or redistributed in the produced Airwaves JAR.
+    implementation('maven.modrinth:sable:2.0.1+mc1.21.1')
+    implementation('maven.modrinth:power-grid:0.6.1')
+    implementation('maven.modrinth:create-electro-energetics:1.21.1-1.1.1')
+    implementation('maven.modrinth:simple-voice-chat:neoforge-1.21.1-2.6.21')
+    implementation('mezz.jei:jei-1.21.1-neoforge:19.53.0.425')
+
+    // Not referenced directly by Java source, but needed for a development
+    // game run matching the reconstructed mod's declared environment.
+    runtimeOnly('maven.modrinth:create-aeronautics:1.3.2+mc1.21.1')
 }
 
 tasks.withType(JavaCompile).configureEach {

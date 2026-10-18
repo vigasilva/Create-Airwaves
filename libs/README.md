@@ -1,10 +1,8 @@
 # Local development dependencies
 
-This directory is intentionally ignored by Git.
+This directory is intentionally ignored by Git and is no longer required for a
+normal build. `./gradlew build` resolves the compatible public development
+dependencies declared in `build.gradle` automatically.
 
-To compile and launch the reconstruction locally, it must contain compatible
-NeoForge 1.21.1 JARs for Create, Create: Aeronautics, Sable, Simple Voice Chat,
-JEI, Create: Power Grid, Electro Energetics, and Sable Companion Common.
-
-They are used only as development dependencies; `gradlew build` does not shade
-or redistribute them in the output JAR.
+You may put experimental replacement JARs here for local testing, but they are
+not read by the default build and are never copied into the output JAR.

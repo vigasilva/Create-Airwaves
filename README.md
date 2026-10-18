@@ -8,7 +8,9 @@ The reconstruction preserves recovered class and method names where available, u
 
 ## Build
 
-Requirements: Java 21 and compatible local dependency JARs in `libs/` (see [`libs/README.md`](libs/README.md)).
+Requirements: Java 21 and internet access on the first Gradle run. Compatible
+development dependencies are resolved from public Maven repositories
+automatically; no JARs need to be copied into `libs/`.
 
 ```bash
 ./gradlew build
@@ -22,4 +24,6 @@ The original JAR declares `CC BY-NC-SA 4.0`. This reconstructed derivative is ke
 
 ## Repository status
 
-Prepared locally for review. It has **not** been uploaded to GitHub.
+The reconstructed source and verified build are published on GitHub. The
+release includes both the reconstructed artifact and the supplied original
+archive, clearly labelled as separate files.
