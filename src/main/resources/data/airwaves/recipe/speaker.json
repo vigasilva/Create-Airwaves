@@ -1,0 +1,26 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "misc",
+ "pattern": [
+  "BCB",
+  "BKB",
+  " A "
+ ],
+ "key": {
+  "B": {
+   "tag": "c:plates/brass"
+  },
+  "C": {
+   "item": "airwaves:speaker_cone"
+  },
+  "K": {
+   "item": "create:andesite_casing"
+  },
+  "A": {
+   "item": "airwaves:amplifier_board"
+  }
+ },
+ "result": {
+  "id": "airwaves:speaker"
+ }
+}

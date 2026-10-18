@@ -1,0 +1,29 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "misc",
+ "pattern": [
+  " W ",
+  "BKC",
+  "PPP"
+ ],
+ "key": {
+  "W": {
+   "item": "airwaves:copper_wire"
+  },
+  "C": {
+   "item": "airwaves:speaker_cone"
+  },
+  "B": {
+   "item": "airwaves:radio_board"
+  },
+  "K": {
+   "item": "create:andesite_casing"
+  },
+  "P": {
+   "tag": "minecraft:planks"
+  }
+ },
+ "result": {
+  "id": "airwaves:radio"
+ }
+}

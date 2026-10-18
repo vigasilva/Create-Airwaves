@@ -1,0 +1,32 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "misc",
+ "pattern": [
+  "BSB",
+  "KAK",
+  "RCR"
+ ],
+ "key": {
+  "B": {
+   "tag": "c:plates/brass"
+  },
+  "S": {
+   "item": "airwaves:speaker_cone"
+  },
+  "K": {
+   "item": "airwaves:mic_capsule"
+  },
+  "A": {
+   "item": "airwaves:audio_board"
+  },
+  "R": {
+   "item": "create:cogwheel"
+  },
+  "C": {
+   "item": "create:brass_casing"
+  }
+ },
+ "result": {
+  "id": "airwaves:tape_player"
+ }
+}

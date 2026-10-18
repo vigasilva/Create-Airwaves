@@ -1,0 +1,83 @@
+{
+ "credit": "Made with Blockbench",
+ "textures": {
+  "0": "airwaves:block/yagi_antenna/0",
+  "1": "airwaves:block/yagi_antenna/1",
+  "2": "airwaves:block/yagi_antenna/2",
+  "3": "airwaves:block/yagi_antenna/3",
+  "4": "airwaves:block/yagi_antenna/4",
+  "particle": "airwaves:block/yagi_antenna/0"
+ },
+ "elements": [
+  {
+   "from": [
+    7.6775,
+    0.65,
+    8.0825
+   ],
+   "to": [
+    8.07,
+    11.14,
+    8.8675
+   ],
+   "faces": {
+    "north": {
+     "uv": [
+      0.0,
+      0.0,
+      1.0,
+      7.0
+     ],
+     "texture": "#3"
+    },
+    "east": {
+     "uv": [
+      1.0,
+      0.0,
+      2.0,
+      7.0
+     ],
+     "texture": "#3"
+    },
+    "south": {
+     "uv": [
+      2.0,
+      0.0,
+      3.0,
+      7.0
+     ],
+     "texture": "#3"
+    },
+    "west": {
+     "uv": [
+      3.0,
+      0.0,
+      4.0,
+      7.0
+     ],
+     "texture": "#3"
+    },
+    "up": {
+     "uv": [
+      4.0,
+      0.0,
+      5.0,
+      1.0
+     ],
+     "texture": "#3"
+    },
+    "down": {
+     "uv": [
+      4.0,
+      1.0,
+      5.0,
+      2.0
+     ],
+     "texture": "#3"
+    }
+   }
+  }
+ ],
+ "parent": "minecraft:block/block",
+ "render_type": "minecraft:cutout"
+}

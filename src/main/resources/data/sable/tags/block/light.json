@@ -1,0 +1,9 @@
+{
+ "replace": false,
+ "values": [
+  "airwaves:speaker",
+  "airwaves:radio",
+  "airwaves:jammer",
+  "airwaves:antenna"
+ ]
+}

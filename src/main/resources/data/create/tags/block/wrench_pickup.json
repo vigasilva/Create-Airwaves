@@ -1,0 +1,18 @@
+{
+ "replace": false,
+ "values": [
+  "airwaves:radio_casing",
+  "airwaves:jammer",
+  "airwaves:dimensional_relay",
+  "airwaves:microphone",
+  "airwaves:speaker",
+  "airwaves:radio",
+  "airwaves:circuit_workbench",
+  "airwaves:radio_console",
+  "airwaves:creative_transmitter",
+  "airwaves:creative_receiver",
+  "airwaves:creative_antenna",
+  "airwaves:transmitter",
+  "airwaves:receiver"
+ ]
+}
